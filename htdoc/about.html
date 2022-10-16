@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+			Grocery | GotoGro-MRM
+		</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/4cc223610f.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+        <!--navigation bar-->
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<a href="index.html"><img src="images/LOGO.png" width="125px"></a>
+				</div>
+				<nav>
+					<ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.php">Account</a></li>
+                    </ul>
+				</nav>
+				<a href="cart.html"><img src="images/CART.png" width="30px" height="30px"></a>
+				<img src="images/MENU.png" class="menu-icon" onclick="menutoggle()">
+			</div>
+		</div>
+        <!--about us-->
+        <div class="about-page">
+            <h1>About GOTO Grocery</h1>
+            <br>
+            <p>Goto Grocery is a member-based grocery store based in Hawthorn. We offer quality grocery items for our members.
+				Sign up with us to get all latest and best deals there are. 
+				Our roots go way back to the early 2000s, in a quiet neighbourhood grocery store in Hawthorn, Victoria .
+				Within 10 years since our inception, Our store quickly became the go-to place for fresh produce, poultry, dairy products as well as a large array of items necessary for daily use. An additional 2 branches were opened in Tasmania (2003), Queensland (2018).
+				All this while, we have recorded our member's records through a simple paper-based method. This year we have decided to completely transform our current method to digital online members records system. This approach will most definately be more environmental friendly and lower our cost of purchasing paper.
+			</p>
+            <br>
+            <div class="milestone-container">
+                <h4>Milestones</h4>
+                <h3>2000</h3>
+                <p>GOTO Grocery launched.</p>
+                <h3>2001</h3>
+                <p>GOTO Grocery opened first branch in Hawthorn.</p>
+                <h3>2003</h3>
+                <p>Nominated Best Neighbourhood Grocery Store by the Retail Award.</p>
+                <h3>2004</h3>
+                <p>GOTO Grocery opened second branch in Tasmania</p>
+                <h3>2009</h3>
+                <p>GOTO Grocery went public. </p>
+                <h3>2018</h3>
+                <p>GOTO Grocery opened third branch in Queensland</p>
+                <h3>2022</h3>
+                <p>GOTO Grocery successfully transitioned from paper-based records to online records</p>
+                
+            </div>
+            <small>INDUSTRY</small>
+                <p>Retail (Grocery Store)</p><br>
+            <small>EXECUTIVE LEADERSHIP</small>
+                <p>Cheah Ming Zhen<br>
+                Chairman of the Board<br><br>
+                Liew Kang Jie<br>
+                Chief Executive Officer, General Manager, Director<br><br>
+                Kan Jet Zing<br>
+                Chief Human Resource Officer, Deputy General Manager<br><br>
+                Lee Yi Xiang<br>
+                Chief Strategy Officer, Chief Investment Officer, Deputy General Manager<br><br>
+                Tan Kai Sheng<br>
+                Deputy General Manager, Director<br><br></p>
+        </div>
+		<!--footer-->
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col-1">
+						<h3>Download Our App</h3>
+						<p>Download App for Android and IOS mobile phone.</p>
+						<div class="app-logo">
+							<img src="images/AS.png">
+							<img src="images/GP.png">
+						</div>
+					</div>
+					<div class="footer-col-2">
+						<img src="images/LOGO.png">
+						<p></p>
+					</div>
+					<div class="footer-col-3">
+						<h3>Useful Links</h3>
+						<ul>
+							<li>Coupons</li>
+							<li>Blog Post</li>
+							<li>Return Policy</li>
+							<li>Join Affiliate</li>
+						</ul>
+					</div>
+					<div class="footer-col-4">
+						<h3>Follow us</h3>
+						<ul>
+							<li>Facebook</li>
+							<li>Twitter</li>
+							<li>Instagram</li>
+							<li>Youtube</li>
+						</ul>
+					</div>
+				</div>
+				<hr>
+				<p class="copyright">Copyright 2022 - Group 9</p>
+			</div>
+		</div>
+        
+		<!--js for navigation bar-->
+		<script>
+			var MenuItems = document.getElementById("MenuItems");
+			
+			MenuItems.style.maxHeight = "0px";
+			
+			function menutoggle(){
+				if(MenuItems.style.maxHeight == "0px")
+				{
+					MenuItems.style.maxHeight = "200px";
+				}
+				else
+				{
+					MenuItems.style.maxHeight = "0px";
+				}
+			}
+		</script>
+	</body>
+</html>
